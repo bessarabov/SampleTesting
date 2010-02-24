@@ -1,9 +1,26 @@
 package MyApp::Login;
 
+=encoding UTF-8
+=cut
+
+=head1 MyApp::Login
+
+Эксперементальный модуль для проверки тестирования
+
+=cut
+
 use DBI;
 
 my $MAX_LOGIN_FAILURES = 3;
 
+=head1 GENERAL FUNCTIONS
+=cut
+
+=head2 login
+
+sub login
+
+=cut
 sub login {
   my ($dbh, $u, $p) = @_;
   # look for the right username and password
@@ -51,4 +68,5 @@ sub login {
       }
   }
 }
+
 

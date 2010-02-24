@@ -7,5 +7,9 @@ license         'perl';
 
 requires        'AppConfig';
 
+# Для тестирования
+requires        'Test::More';
+requires        'Test::Pod::Coverage';
+
 auto_install;
 WriteAll;

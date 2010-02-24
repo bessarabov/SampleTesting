@@ -3,7 +3,16 @@
 use strict;
 use warnings;
 
-use lib qw(../lib);
+use v5.10;
+
+use FindBin;
+FindBin->again;
+use lib "$FindBin::Bin/../lib";
+
 use MyApp::Login;
 
-print join("\n", @INC);
+&echo_hello;
+
+sub echo_hello {
+    say "Hello, World!";
+}
