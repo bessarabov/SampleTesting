@@ -11,6 +11,7 @@ requires        'AppConfig';
 requires        'Test::More';
 requires        'Test::Pod::Coverage';
 requires        'Test::Trap';
+requires        'DBD::Mock';
 
 auto_install;
 WriteAll;
