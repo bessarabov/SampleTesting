@@ -10,6 +10,7 @@ requires        'AppConfig';
 # Для тестирования
 requires        'Test::More';
 requires        'Test::Pod::Coverage';
+requires        'Test::Trap';
 
 auto_install;
 WriteAll;

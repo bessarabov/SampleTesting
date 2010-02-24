@@ -1,5 +1,8 @@
 package MyApp::Login;
 
+use strict;
+use warnings;
+
 =encoding UTF-8
 =cut
 
@@ -23,7 +26,10 @@ sub login
 =cut
 sub login {
   my ($dbh, $u, $p) = @_;
-  # look for the right username and password
+
+    print STDERR "mememe";
+
+# look for the right username and password
   my ($user_id) = $dbh->selectrow_array(
       "SELECT user_id FROM users WHERE username = '$u' AND password = '$p'"
   );
